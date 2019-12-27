@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        jQuery.browser = {};
+        (function () {
+
+        jQuery.browser.msie = false;
+        jQuery.browser.version = 0;
+
+        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+            jQuery.browser.msie = true;
+            jQuery.browser.version = RegExp.$1;
+        }
+    })();
+</script>
+    <script src="js/jquery.jfeed.js"></script>
+    <script src="js/jquery.jfeed.pack.js"></script>
+</head>
+
+<body>
+    <div class="tempDiv">
+        <h1 id="temp" class="temp">Temp</h1>
+        <h1 class="degree">o</h1>
+    </div>
+    <img id="weatherIco" class="weatherIcon" src="">
+    <div class="rssCont">
+        <h2 id="rssDesc" class="rssDesc">RSS</h2>
+    </div>
+    <div class="timeDiv">
+        <h1 id="time" class="time">00:00</h1>
+        <h2 id="date" class="date">Monday, January 1, 2000</h2>
+    </div>
+    
+    
+
+    <script src="js/weather.js"></script>
+    <script src="js/rss.js"></script>
+    <script src="js/time.js"></script>
+
+</body>
+
+</html>
