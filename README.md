@@ -10,6 +10,8 @@ So after many failed attempts, I decided to simply use plain Javascript to creat
 ## Hardware
 I run this with a RaspberryPi zero-w, but it could be run on any RaspberryPi with wifi capability. The pin may change between RPIs for the PIR motion sensor.
 
+![PIR Wiring](/RepoImages/PIR.png)
+
 ## PI Setup
 I used the latest Rasbian OS to run the app. The image came with Chromium which works well for SimpleMirror.
 
@@ -23,3 +25,7 @@ There are 3 bash scripts and 2 python scripts.
 * monitor_on.sh will turn on the HDMI
 * monitor_off.sh will turn off the HDMI
 * startup.sh will run both mirror.py and pir.py
+
+To have these run on startup, I configured the startup.sh script to run on startup.
+
+if you are using the "pi" user, these scripts should all be placed at "/home/pi/"
