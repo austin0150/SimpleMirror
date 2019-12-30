@@ -17,9 +17,9 @@ In the Chromium config flags, you can add "--start-fullscreen" to force Chromium
 
 I used python and bash scripts to automate the mirror and PIR sensor startup.
 There are 3 bash scripts and 2 python scripts.
-mirror.py will open a chromium browser to the index.html
-pir.py will turn off the screen every 40 seconds that it does not detect movement from the PIR sensor.
-*I found this script while researching and modified it slightly, here is the original* https://forum.magicmirror.builders/topic/6291/howto-turn-on-off-your-monitor-time-based-pir-button-app?page=1
-monitor_on.sh will turn on the HDMI
-monitor_off.sh will turn off the HDMI
-startup.sh will run both mirror.py and pir.py
+### mirror.py will open a chromium browser to the index.html
+### pir.py will turn off the screen every 40 seconds that it does not detect movement from the PIR sensor.
+### I found this script while researching and modified it slightly, here is the original* https://forum.magicmirror.builders/topic/6291/howto-turn-on-off-your-monitor-time-based-pir-button-app?page=1
+### monitor_on.sh will turn on the HDMI
+### monitor_off.sh will turn off the HDMI
+### startup.sh will run both mirror.py and pir.py
