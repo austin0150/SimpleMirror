@@ -10,6 +10,7 @@ So after many failed attempts, I decided to simply use plain Javascript to creat
 ## Hardware
 I run this with a RaspberryPi zero-w, but it could be run on any RaspberryPi with wifi capability. The pin may change between RPIs for the PIR motion sensor.
 
+### Wiring Diagram for the PIR sensor
 ![PIR Wiring](/RepoImages/PIR.png)
 
 ## PI Setup
@@ -28,4 +29,7 @@ There are 3 bash scripts and 2 python scripts.
 
 To have these run on startup, I configured the startup.sh script to run on startup.
 
-if you are using the "pi" user, these scripts should all be placed at "/home/pi/"
+I reccomend placing all the scripts in the usr dir.
+So if you are using the "pi" user, these scripts should all be placed at "/home/pi/".
+
+After you configure your Pi for wifi, and configure to run these scripts at start, your Pi should be ready.
