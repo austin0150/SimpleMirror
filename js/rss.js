@@ -2,15 +2,12 @@ function updateFeed(){
   jQuery.getFeed({
     url: 'https://cors-anywhere.herokuapp.com/https://www.reddit.com/r/worldnews.rss',
     success: function(feed) {
-      alert(feed.title);
-      console.log(feed.title);
-      console.log(feed.description); 
-      console.log(feed);
 
       document.getElementById("rssDesc").innerHTML = feed.items[0].title;
     
       let i = 0;
 
+      //iterate through the items retreived and update the dom with their description
      for (let i=0; i<feed.items.length; i++) {
       setTimeout( function timer(){
         document.getElementById("rssDesc").innerHTML = feed.items[i].title;

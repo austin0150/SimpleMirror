@@ -25,6 +25,7 @@ function updateTime() {
 
     var year = today.getFullYear();
 
+    //Define an array of weekdays
     var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -34,6 +35,7 @@ function updateTime() {
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
+    //Define an array of months
     var month = new Array(12);
     month[0] = "Janurary";
     month[1] = "February";
@@ -51,22 +53,30 @@ function updateTime() {
     var monthStr = month[today.getMonth()];
     var dayStr = weekday[today.getDay()];
 
+    //Switch AM to PM if its the afternoon
     if(Hours > 11)
     {
         ampm = 'PM';
+    }
+    if(Hours > 12)
+    {
         Hours = (Hours - 12);
+    }
+
+    if(Mins < 10)
+    {
+        Mins = "0" + Mins;
     }
 
     var time = Hours + ":" + Mins + " " + ampm;
     var date = dayStr + ", " + monthStr + " " + dayNum + ", " + year;
 
+    //Update the DOM with the new time and date
     document.getElementById("time").innerHTML = time;
     document.getElementById("date").innerHTML = date;
-
-
-    //setTimeout(updateTime(), 60000)
 }
 
+//loop the updateTime function every second
 updateTime();
 var timeVar = setInterval(() => {
     updateTime();
