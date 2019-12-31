@@ -35,6 +35,6 @@ So if you are using the "pi" user, these scripts should all be placed at "/home/
 After you configure your Pi for wifi, and configure to run these scripts at start, your Pi should be ready.
 
 ## OpenWeatherMap API
-To use the weather functionality, you will need to generate your own free API key. \n
-You can find the API here : https://openweathermap.org/ /n
+To use the weather functionality, you will need to generate your own free API key.  
+You can find the API here : https://openweathermap.org/  
 Once you create a free account, you can generate your own API key to place in SimpleMiror/js/weather.js line 2.
