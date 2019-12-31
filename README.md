@@ -36,5 +36,5 @@ After you configure your Pi for wifi, and configure to run these scripts at star
 
 ## OpenWeatherMap API
 To use the weather functionality, you will need to generate your own free API key. \n
-You can find the API here : https://openweathermap.org/ \n
+You can find the API here : https://openweathermap.org/ /n
 Once you create a free account, you can generate your own API key to place in SimpleMiror/js/weather.js line 2.
