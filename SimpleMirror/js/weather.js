@@ -1,5 +1,5 @@
 function updateWeather(){
-  var key = '9823e4dfa7852dedbfc8877d6a91f2c0';
+  var key = '';
 
   var settings = {
     "async": true,
